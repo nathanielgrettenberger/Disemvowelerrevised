@@ -17,8 +17,10 @@ namespace disemvoweler
         // create the fucntion here
         static void disemvol(string input)
         {
+            // here we are giving the two string value
             string disemvowel = null;
             string vowel = null;
+            // the loop the searches the the string that you want to fing the vowel in
             for (int i = 0; i < input.Length; i++)
             {
                 char letter = input[i];
@@ -29,6 +31,7 @@ namespace disemvoweler
                 }
                 else
                 {
+                    // if statement that takes out the spaces
                     if (letter != ' ')
                     {
                         disemvowel = disemvowel + letter;
@@ -36,6 +39,7 @@ namespace disemvoweler
                     }
                 }
             }
+            // what indcates which string is the vowel, and what string that is the disemvoweled
             Console.WriteLine(" disemvowel: " + disemvowel);
             Console.WriteLine(" vowel: " + vowel);
         }
